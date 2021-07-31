@@ -1,0 +1,25 @@
+LOCAL_PATH := $(call my-dir)
+
+#
+# Apk section
+#
+
+# PWN-Term (Non-debug)
+include $(CLEAR_VARS)
+LOCAL_MODULE := pwn-term
+LOCAL_SRC_FILES := apps/$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
+
+# PWN-X11 (Non-debug)
+include $(CLEAR_VARS)
+LOCAL_MODULE := pwn-x11
+LOCAL_SRC_FILES := apps/$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
