@@ -4,7 +4,7 @@ LOCAL_PATH := $(call my-dir)
 # Apk section
 #
 
-# PWN-Term (Non-debug)
+# PWN-Term (cert-debug)
 include $(CLEAR_VARS)
 LOCAL_MODULE := pwn-term
 LOCAL_SRC_FILES := apps/$(LOCAL_MODULE).apk
@@ -14,7 +14,7 @@ LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_DEX_PREOPT := false
 include $(BUILD_PREBUILT)
 
-# PWN-X11 (Non-debug)
+# PWN-X11 (cert-debug)
 include $(CLEAR_VARS)
 LOCAL_MODULE := pwn-x11
 LOCAL_SRC_FILES := apps/$(LOCAL_MODULE).apk
